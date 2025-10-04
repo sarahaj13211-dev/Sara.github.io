@@ -4,71 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Babe❤❤</title>
+  <title>Babe❤️</title>
   <style>
     body {
       background-color: #ffe6f2;
-      color: #ff6699;
-      font-family: "Comic Sans MS", cursive;
       text-align: center;
-      padding: 40px;
+      font-family: 'Cairo', sans-serif;
+      color: #ff4d79;
+      position: relative;
+      overflow: hidden;
     }
+
     h1 {
-      font-size: 2em;
+      font-size: 40px;
+      margin-top: 40px;
     }
+
     p {
-      font-size: 18px;
-      line-height: 1.6;
+      font-size: 20px;
     }
+
     img {
-      width: 80%;
-      max-width: 300px;
+      width: 300px;
+      height: auto;
+      margin-top: 30px;
       border-radius: 15px;
-      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(255, 77, 121, 0.5);
     }
+
+    /* القلوب في الخلفية */
+    .heart {
+      position: absolute;
+      color: red;
+      font-size: 180px;
+      opacity: 0.3;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .heart:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { top: 40%; right: 15%; animation-delay: 2s; }
+    .heart:nth-child(3) { bottom: 10%; left: 40%; animation-delay: 4s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
     button {
-      background-color: #ffb6c1;
-      padding none;
-      ppaddin: 15px 25px;
-      border-radius: 30px;
+      margin-top: 25px;
+      padding: 10px 20px;
       font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background-color: #ff99bb;
       color: white;
       cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #ff80aa;
     }
   </style>
 </head>
 <body>
-  <h1> احبك موت❤❤ </h1>
+  <!-- قلوب الخلفية -->
+  <div class="heart">❤️</div>
+  <div class="heart">❤️</div>
+  <div class="heart">❤️</div>
+
+  <h1>احبك موت❤️❤️</h1>
   <p>هنا تكتبين الرسالة اللطيفة اللي تبينها ✨</p>
-<div style="display: flex; justify-content: center; align-items: center; height: 400px;">
-  <div style="
-    position: relative;
-    width: 300px;
-    height: 270px;
-    background-color: red;
-    clip-path: path('M150 270 L0 90 A75 75 0 1 1 150 90 A75 75 0 1 1 300 90 Z');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  ">
-    <img src="image0.jpeg" alt="My Love" style="width: 100%; height: 100%; object-fit: cover;">
-  </div>
-</div>
-  <button onclick="playSong()">🎁 اضغط للهديّة 🎶</button>
+
+  <!-- الصورة -->
+  <img src="image0.jpeg" alt=">
+
+  <!-- الزر لتشغيل الأغنية -->
+  <br>
+  <button onclick="playSong()">🎁 اضغط للهديّة 🎵</button>
 
   <!-- رابط الأغنية -->
-  <audio id="song" src="رابط_الأغنية_هنا.mp3"></audio>
+  <audio id="song" src="your_song.mp3"></audio>
 
   <script>
     function playSong() {
-      document.getElementById("song").play();
+      document.getElementById('song').play();
     }
   </script>
 </body>
 </html>
-Sent from my iPhone
+
+
